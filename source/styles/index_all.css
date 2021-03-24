@@ -412,11 +412,6 @@ header .bouton {
   margin-block-start: 0.5em;
   margin-block-end: 5em;
   border-radius: 10em;
-}
-
-header .bouton p {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
   font-weight: 400;
 }
 
@@ -442,6 +437,11 @@ button {
   box-shadow: 0.25rem 0.25rem 10px #bbb8b8;
   border-radius: 2em;
   border: none;
+}
+
+.nav .function1, .nav .function2, .nav .function3 {
+  align-items: center;
+  white-space: nowrap;
 }
 
 .bold {
@@ -999,7 +999,7 @@ section.container figure .heart:focus::before {
   .nav .function3 {
     width: 90%;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
     background: #f2f2f2;
     margin-bottom: 1rem;

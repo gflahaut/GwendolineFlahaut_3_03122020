@@ -109,11 +109,7 @@ header {
         margin-block-start: 0.5em;
         margin-block-end: 5em;
         border-radius: 10em;
-        p {
-            margin-block-start: 0.5em;
-            margin-block-end: 0.5em;
-            font-weight: 400;
-        }
+        font-weight: 400;
         &:hover {
             background: linear-gradient(140deg, lighten($primary, 10), lighten($secondary, 10));
             box-shadow: 0.25rem 0.25rem 10px darken(#bbb8b8, 10);
@@ -137,11 +133,13 @@ button {
     border-radius: 2em;
     border: none;
 }
-
+.nav .function1, .nav .function2, .nav .function3{
+    align-items: center;
+    white-space: nowrap;
+}
 .bold {
     font-weight: bold;
 }
-
 li {
     list-style-type: none;
     &::before {
