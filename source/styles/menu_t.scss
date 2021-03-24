@@ -1,0 +1,39 @@
+@import "head.scss";
+// IPAD
+@media only screen and (min-device-width: 481px) {
+  header {
+    .logo {
+      width: 90%;
+      #logo {
+        margin-inline-start: 7em;
+      }
+    }
+  }
+  .resto {
+    width: 100%;
+  }
+  section {
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    margin-top: -85px;
+    div {
+      width: 90%;
+    }
+
+    .ingrédients {
+      font-size: 1.2em;
+    }
+    .price {
+      margin-inline-start: 0.5em;
+      font-size: 1.2em;
+    }
+    button {
+      width: 50%;
+      margin-inline-start: 12.5em;
+      transition: filter 0.5s ease-in-out;
+    }
+  }
+  .heart {
+    margin-inline-start: 5em;
+  }
+}

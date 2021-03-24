@@ -1,0 +1,40 @@
+@import 'head.scss';
+// MOBILE
+@media only screen and (min-device-width:0px) and (max-device-width: 480px) {
+  *{
+    outline:none;
+  }
+  header {
+      .logo{
+        width: 90%;
+        #logo{
+          margin-inline-start: 4em;
+        }
+      }
+    }
+	  .resto{
+      width:100%;
+    }
+    section{
+      border-radius: 1em 1em 0 0;
+      width: 100%;
+      margin-top:-85px;
+      div{
+        width:85%;
+      }
+      .ingrédients{
+        font-size: 0.9em;
+      }
+      .price{
+        margin-inline-start: 0.5em;
+      }
+      button{
+        width: 50%;
+        margin-inline-start: 5.5em;
+        transition: filter 0.9s ease-in-out;
+    }
+  }
+    // .heart{
+    //   margin-inline-start: 3em;
+    // }
+  }

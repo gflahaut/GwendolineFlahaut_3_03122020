@@ -1,0 +1,152 @@
+//--------------------------------------------------------------------------------------------TABLETTES----------------------------------------------------------------------------\\
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  body,
+  html {
+    scroll-behavior: smooth;
+  }
+  header {
+    .logo {
+      width: 30%;
+    }
+
+    .localisation {
+      width: 100%;
+      input {
+        width: 50%;
+        height: 50%;
+        font-size: 1.5rem;
+        position: relative;
+        right: -15vw;
+        align-self: unset;
+        grid-column-start: unset;
+        grid-row-start: unset;
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+        margin-inline-start: 0;
+      }
+      &:before {
+        font-family: $font_icons;
+        font-weight: 700;
+        font-size: 2rem;
+        content: "\f3c5";
+        padding: 0 2rem;
+        position: relative;
+        right: -29vw;
+      }
+    }
+    h2.slogan {
+      font-size: 1.5em;
+    }
+    p.slogan {
+      font-size: 1.2em;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      font-weight: normal;
+      line-height: initial;
+    }
+    .bouton {
+      width: 50%;
+      margin-block-end: 4em;
+      p {
+        margin-inline-start: 5px;
+        margin-inline-end: 5px;
+        font-size: 1rem;
+      }
+      &:hover,
+      &:focus {
+        transition: filter 0.9s ease-in-out;
+        outline: none;
+      }
+    }
+  }
+  li {
+    &::before {
+      left: 11rem;
+      top: 3.3rem;
+    }
+  }
+  .nav {
+    h4 {
+      margin-block-start: 1.83em;
+      margin-block-end: 1.5em;
+      margin-inline-start: 0.5em;
+      margin-inline-end: 1.5em;
+      grid-column: 2 / span 3;
+      font-size: 1.05em;
+      font-weight: bolder;
+    }
+    .function1:focus::before,
+    .function2:focus::before,
+    .function3:focus::before {
+      outline: none;
+    }
+    .function1:hover::before,
+    .function2:hover::before,
+    .function3:hover::before {
+      outline: none;
+    }
+    .function1,
+    .function2,
+    .function3 {
+      margin: auto;
+      width: 50%;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+      grid-template-rows: 100%;
+      background: #f2f2f2;
+      &::before {
+        margin-block-start: 1.83em;
+        margin-block-end: 1.83em;
+        margin-inline-start: 2em;
+        color: grey;
+      }
+    }
+  }
+
+  section.container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 0.1fr);
+    figure {
+      width: 90%;
+      height: auto;
+      margin-block-start: 0;
+      margin-block-end: 0.8em;
+      margin-inline-start: 2.3em;
+      .ville {
+        font-size: 1.2em;
+      }
+      .heart::before {
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 2em;
+        height: 2em;
+        text-align: right;
+      }
+      img {
+        height: 24rem;
+      }
+      figcaption {
+        margin-inline-start: 15.5px;
+        font-size: 1.5em;
+      }
+      span {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: start;
+        justify-content: space-between;
+        font-size: 1em;
+        margin-inline-start: 15.5px;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        &.green::before {
+          position: absolute;
+          margin-top: 4%;
+          right: 10%;
+        }
+      }
+    }
+  }
+  @import "footer";
+}
