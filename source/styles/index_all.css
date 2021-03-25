@@ -642,7 +642,6 @@ section.container figure .heart:focus::before {
   li::before {
     left: 2rem;
     top: 2.99rem;
-    margin-inline-start: -2.5em;
   }
   .nav h4 {
     margin-block-start: 1.83em;
