@@ -311,6 +311,11 @@ html h2 {
   margin-inline-start: 1em;
 }
 
+body button,
+html button {
+  font-family: "Roboto";
+}
+
 * {
   outline: none;
   box-sizing: border-box;
