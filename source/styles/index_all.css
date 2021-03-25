@@ -615,26 +615,34 @@ section.container figure .heart:focus::before {
     margin-inline-start: 3em;
     margin-inline-end: 9em;
   }
-  header h2.slogan,
   header p.slogan {
-    margin: 0;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
   }
   header h2.slogan {
     font-size: 1.9em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
   }
   header .bouton {
     width: 50%;
     padding: 0.9em;
+    white-space: nowrap;
   }
   header .bouton p {
     margin-inline-start: 5px;
     margin-inline-end: 5px;
     font-size: 0.85rem;
   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
   li::before {
     left: 2rem;
     top: 2.99rem;
-    margin-inline-start: 0.5em;
+    margin-inline-start: -2.5em;
   }
   .nav h4 {
     margin-block-start: 1.83em;
@@ -650,11 +658,12 @@ section.container figure .heart:focus::before {
   .nav .function3 {
     width: 80%;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 0.7fr 1fr 0.5fr;
     grid-template-rows: 100%;
     background: #f2f2f2;
     margin-bottom: 1rem;
     margin-inline-start: 2.5em;
+    margin-inline-end: 1em;
   }
   .nav .function1::before,
   .nav .function2::before,
