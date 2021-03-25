@@ -135,6 +135,9 @@ button {
     box-shadow: 0.25rem 0.25rem 10px #bbb8b8;
     border-radius: 2em;
     border: none;
+    &:before{
+        margin-inline-end: 0.25em;
+    }
 }
 .nav .function1, .nav .function2, .nav .function3{
     align-items: center;

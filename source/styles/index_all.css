@@ -444,6 +444,10 @@ button {
   border: none;
 }
 
+button:before {
+  margin-inline-end: 0.25em;
+}
+
 .nav .function1, .nav .function2, .nav .function3 {
   align-items: center;
   white-space: nowrap;
