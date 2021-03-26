@@ -13,6 +13,7 @@ html {
     line-height: 1.6;
     counter-reset: liste;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     h2 {
         margin-inline-start: 1em;
     }

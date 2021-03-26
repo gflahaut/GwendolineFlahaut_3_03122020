@@ -226,7 +226,7 @@ section button:hover, section button:focus {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   padding-left: 0.5rem;
 }
 
