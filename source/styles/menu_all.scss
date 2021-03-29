@@ -231,7 +231,7 @@ section {
   }
 }
 
-@for $i from 0 to 9 {
+@for $i from 0 to 10 {
   .wait-#{$i} {
     animation-delay: #{$i/3}s;
   }

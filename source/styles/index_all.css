@@ -1,19 +1,23 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;500;600;700;800;900&display=swap");
+.loading-spinner, #cookie {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 .loading-spinner {
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 1fr;
   position: fixed;
   z-index: 9999;
   top: 0px;
   left: 0px;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   cursor: wait;
-  background: radial-gradient(black, grey, white);
+  background: radial-gradient(#9356DC, #FF79DA, #99E2D0);
   -moz-animation: hideme 0s ease-in 3s forwards;
   /* Firefox */
   -webkit-animation: hideme 0s ease-in 3s forwards;
@@ -25,33 +29,156 @@
   animation-fill-mode: forwards;
 }
 
-.loading-spinner h1 {
+.loading-spinner #cookie svg {
+  width: 50%;
+  top: 12em;
+  left: 5em;
+  -webkit-animation-name: reverse-rotate;
+  -moz-animation-name: reverse-rotate;
+  -ms-animation-name: reverse-rotate;
+  -o-animation-name: reverse-rotate;
+  animation-name: reverse-rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.loading-spinner #circle text {
   font-family: "Shrikhand";
-  font-size: 18vh;
-  grid-column: span 3;
-  opacity: 0.75;
-  animation: pulse 2.5s linear infinite;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-self: center;
-  background: -webkit-radial-gradient(#9356DC, #FF79DA, #99E2D0);
+  font-size: 1em;
+  font-weight: bold;
+  background: -webkit-radial-gradient(black, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1, 1);
-    opacity: 0.25;
+.loading-spinner #circle svg {
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 100%;
+  height: 540px;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
   }
-  50% {
-    transform: scale(1.2, 1);
-    opacity: 1;
+  to {
+    -webkit-transform: rotate(0);
   }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0.25;
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
+}
+
+@-ms-keyframes rotate {
+  .loading-spinner #circle from {
+    -ms-transform: rotate(360deg);
+  }
+  .loading-spinner #circle to {
+    -ms-transform: rotate(0);
+  }
+}
+
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes reverse-rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rreverse-rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes reverse-rotate {
+  .loading-spinner #circle from {
+    -webkit-transform: rotate(0);
+  }
+  .loading-spinner #circle to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes reverse-rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -68,6 +195,14 @@
     width: 0;
     height: 0;
     visibility: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 320px) {
+  #cookie svg {
+    min-width: 30%;
+    top: 14em;
+    left: 7em;
   }
 }
 
@@ -229,9 +364,29 @@ button:before {
   margin-inline-end: 0.25em;
 }
 
-.nav .function1, .nav .function2, .nav .function3 {
+.nav {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25% 100%;
+  width: 100%;
+}
+
+.nav span.bold {
+  grid-column: 1 / span 3;
+}
+
+.nav .function1,
+.nav .function2,
+.nav .function3 {
+  min-width: 80%;
   align-items: center;
   white-space: nowrap;
+  margin-inline-end: 1em;
+  margin-inline-start: 1em;
+}
+
+.nav h4 {
+  grid-column: 2 / span 3;
 }
 
 .bold {
@@ -369,7 +524,7 @@ section.container figure .heart:focus::before {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
   header .logo {
     width: 50%;
   }
@@ -410,15 +565,9 @@ section.container figure .heart:focus::before {
     margin-inline-end: 5px;
     font-size: 0.85rem;
   }
-  ul {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
   li::before {
     left: 2rem;
     top: 2.99rem;
-    margin-inline-start: -2.5em;
   }
   .nav h4 {
     margin-block-start: 1.83em;
@@ -432,7 +581,6 @@ section.container figure .heart:focus::before {
   .nav .function1,
   .nav .function2,
   .nav .function3 {
-    width: 80%;
     display: grid;
     grid-template-columns: 0.7fr 1fr 0.5fr;
     grid-template-rows: 100%;
@@ -527,7 +675,7 @@ section.container figure .heart:focus::before {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   header .logo {
     width: 30%;
   }
@@ -581,8 +729,8 @@ section.container figure .heart:focus::before {
     outline: none;
   }
   li::before {
-    left: 11rem;
-    top: 3.3rem;
+    left: 0;
+    top: 3rem;
   }
   .nav h4 {
     margin-block-start: 1.83em;
@@ -606,12 +754,11 @@ section.container figure .heart:focus::before {
   .nav .function1,
   .nav .function2,
   .nav .function3 {
-    margin: auto;
-    width: 50%;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
     grid-template-rows: 100%;
     background: #f2f2f2;
+    margin-right: 2rem;
   }
   .nav .function1::before,
   .nav .function2::before,

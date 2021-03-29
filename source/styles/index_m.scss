@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------------------------------MOBILES----------------------------------------------------------------------------\\
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
   header {
     .logo {
       width: 50%;
@@ -46,16 +46,12 @@
       }
     }
   }
-  ul{
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-  }
+ 
   li {
     &::before {
       left: 2rem;
       top: 2.99rem;
-      margin-inline-start: -2.5em;
+    //   margin-inline-start: -2.5em;
     }
   }
   .nav {
@@ -71,7 +67,6 @@
     .function1,
     .function2,
     .function3 {
-      width: 80%;
       display: grid;
       grid-template-columns: 0.7fr 1fr 0.5fr;
       grid-template-rows: 100%;

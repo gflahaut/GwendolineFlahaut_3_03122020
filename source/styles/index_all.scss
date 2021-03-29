@@ -17,7 +17,7 @@ html {
     h2 {
         margin-inline-start: 1em;
     }
-    button{
+    button {
         font-family: $font_txt;
     }
 }
@@ -136,19 +136,37 @@ button {
     box-shadow: 0.25rem 0.25rem 10px #bbb8b8;
     border-radius: 2em;
     border: none;
-    &:before{
+    &:before {
         margin-inline-end: 0.25em;
     }
 }
-.nav .function1, .nav .function2, .nav .function3{
+
+.nav {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 100%;
+    width: 100%;
+    & span.bold {
+      grid-column: 1 / span 3;
+    }
+    .function1,
+    .function2,
+    .function3 {
+    min-width: 80%;
     align-items: center;
     white-space: nowrap;
+    margin-inline-end: 1em;
+    margin-inline-start: 1em;
+    }
+    h4 {
+      grid-column: 2 / span 3;
+    }
 }
 .bold {
     font-weight: bold;
 }
 li {
-    list-style-type: none;
+   list-style-type: none;
     &::before {
         counter-increment: liste;
         content: counter(liste);
