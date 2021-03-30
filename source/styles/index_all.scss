@@ -258,7 +258,7 @@ section.container {
             z-index: 10;
             grid-column-start: 2;
             display: flex;
-            justify-items: center;
+            justify-content: flex-end;
             align-items: center;
         }
         .heart::before {
