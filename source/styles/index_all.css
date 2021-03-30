@@ -1017,7 +1017,6 @@ section.container figure .heart:focus::before {
   }
   section.container figure figcaption {
     margin-inline-start: 24.5px;
-    margin-block-end: -1em;
     font-size: 1.65em;
     width: 10em;
   }
