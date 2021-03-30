@@ -1005,7 +1005,7 @@ section.container figure .heart:focus::before {
     margin-left: 0;
   }
   section.container figure .ville {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   section.container figure span.green::before {
     position: absolute;
