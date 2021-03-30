@@ -147,7 +147,7 @@ button {
     grid-template-rows: 25% 100%;
     width: 100%;
     & span.bold {
-      grid-column: 1 / span 3;
+      grid-column: span 3;
     }
     .function1,
     .function2,
@@ -221,7 +221,7 @@ section.container {
         text-align: left;
         grid-template-columns: 5fr 1fr;
         margin-left: 1em;
-        div.ch {
+        span.ch {
             display: grid;
             grid-template-columns: 80% 20%;
             grid-template-rows: 1fr;

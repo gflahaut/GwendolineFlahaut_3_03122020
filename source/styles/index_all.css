@@ -9,6 +9,10 @@
 }
 
 .loading-spinner {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   position: fixed;
   z-index: 9999;
   top: 0px;
@@ -27,6 +31,17 @@
   animation: hideme 0s ease-in 3s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.loading-spinner #container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.loading-spinner #circle, .loading-spinner #cookie {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .loading-spinner #cookie svg {
@@ -372,7 +387,7 @@ button:before {
 }
 
 .nav span.bold {
-  grid-column: 1 / span 3;
+  grid-column: span 3;
 }
 
 .nav .function1,
@@ -468,7 +483,7 @@ section.container figure {
   margin-left: 1em;
 }
 
-section.container figure div.ch {
+section.container figure span.ch {
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: 1fr;

@@ -153,6 +153,11 @@
   .bold {
     font-weight: bold;
   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
   li {
     list-style-type: none;
   }
