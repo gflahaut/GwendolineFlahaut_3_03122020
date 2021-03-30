@@ -1,0 +1,280 @@
+@import "head.scss";
+@import "spinner2.scss";
+
+.loading-spinner,
+.main {
+    transform: translateY(0vh);
+}
+body,
+html {
+    background: white;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    counter-reset: liste;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    h2 {
+        margin-inline-start: 1em;
+    }
+    button {
+        font-family: $font_txt;
+    }
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+h2,
+h4,
+p,
+figcaption,
+span {
+    font-family: $font_txt;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background: #f2f2f2;
+    figure {
+        display: flex;
+        width: 100%;
+        background: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .logo {
+        margin: auto;
+        border: 0;
+        padding: 1em;
+    }
+    input,
+    .localisation,
+    .localisation::before {
+        margin: auto;
+    }
+    .localisation {
+        background-color: #d8d8d8;
+        width: auto;
+        padding: 1em;
+        color: #000000;
+        box-shadow: inset 0 3px 7px #a3a3a3;
+        input {
+            font-family: "Arial";
+            width: 100%;
+            height: 55%;
+            font-weight: 700;
+            z-index: 1000;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            text-align: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline-start: 2em;
+        }
+    }
+    h2.slogan,
+    p.slogan {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    h2.slogan {
+        margin: auto;
+        margin-block-start: 1.5em;
+        line-height: 1;
+    }
+    p.slogan {
+        margin-block-start: 1em;
+        margin-block-end: 2em;
+        font-weight: 200;
+        line-height: 1.25;
+    }
+    .bouton {
+        background: linear-gradient(0deg, #9356dc, #ff79da);
+        margin: auto;
+        color: white;
+        text-align: center;
+        line-height: 10px;
+        padding: 1em;
+        margin-block-start: 0.5em;
+        margin-block-end: 5em;
+        border-radius: 10em;
+        font-weight: 400;
+        &:hover {
+            background: linear-gradient(140deg, lighten($primary, 10), lighten($secondary, 10));
+            box-shadow: 0.25rem 0.25rem 10px darken(#bbb8b8, 10);
+        }
+    }
+    p {
+        padding: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button {
+    box-shadow: 0.25rem 0.25rem 10px #bbb8b8;
+    border-radius: 2em;
+    border: none;
+    &:before {
+        margin-inline-end: 0.25em;
+    }
+}
+
+.nav {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 100%;
+    width: 100%;
+    & span.bold {
+      grid-column: span 3;
+    }
+    .function1,
+    .function2,
+    .function3 {
+    min-width: 80%;
+    align-items: center;
+    white-space: nowrap;
+    margin-inline-end: 1em;
+    margin-inline-start: 1em;
+    }
+    h4 {
+      grid-column: 2 / span 3;
+    }
+}
+.bold {
+    font-weight: bold;
+}
+li {
+   list-style-type: none;
+    &::before {
+        counter-increment: liste;
+        content: counter(liste);
+        background: #9356dc;
+        color: white;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        z-index: 1000;
+        position: relative;
+    }
+}
+
+$functions: (function1, $fa-var-mobile-alt), (function2, $fa-var-list-ul), (function3, $fa-var-store);
+@each $function in $functions {
+    .#{nth($function,1)}::before {
+        display: inline-block;
+        font-family: $font_icons;
+        font-weight: bold;
+        color: grey;
+        content: "#{nth($function,2)}";
+    }
+}
+
+.function1:focus::before,
+.function2:focus::before,
+.function3:focus::before {
+    color: $primary;
+}
+.function1:hover::before,
+.function2:hover::before,
+.function3:hover::before {
+    color: $primary;
+}
+
+section.container {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-row-gap: 0.5em;
+    border-radius: 0;
+    background: none;
+    figure {
+        background-color: white;
+        border-radius: 1rem;
+        padding-bottom: 1.5vh;
+        box-shadow: 0 0 16px #000;
+        text-align: left;
+        grid-template-columns: 5fr 1fr;
+        margin-left: 1em;
+        p.ch {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 1fr;
+            margin-inline-start: 0;
+            margin-block-end: 0;
+            font-size: 1em;
+        }
+        .ville {
+            line-height: 0.6;
+            white-space: nowrap;
+            grid-column-start: 1;
+        }
+        span.green::before {
+            font-family: "Roboto";
+            content: "Nouveau";
+            background-color: #99e2d0;
+            color: green;
+            font-weight: bold;
+            padding: 0.5em;
+        }
+        img {
+            box-sizing: content-box;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+        figcaption {
+            margin-block-start: 0.5em;
+        }
+
+        .heart {
+            z-index: 10;
+            grid-column-start: 2;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        .heart::before {
+            display: block;
+            content: "";
+            background-image: url("../images/icone/heart-regular.svg");
+            background-repeat: no-repeat;
+            transition: background-image 2s;
+        }
+        .heart:hover::before,
+        .heart:focus::before {
+            background-image: url("../images/icone/heart-solid.svg");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@import "index_m.scss";
+@import "index_t.scss";
+@import "index_d.scss";
+@import "footer.scss";
