@@ -232,7 +232,6 @@ section.container {
             font-size: 1rem;
         }
         .ville {
-            line-height: 0.6;
             white-space: nowrap;
             grid-column-start: 1;
         }
@@ -257,8 +256,9 @@ section.container {
         .heart {
             z-index: 10;
             grid-column-start: 2;
-            display: flex;
-            justify-content: flex-end;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
             align-items: center;
         }
         .heart::before {

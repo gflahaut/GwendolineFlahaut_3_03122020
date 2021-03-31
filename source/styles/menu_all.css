@@ -321,7 +321,7 @@ section button:hover, section button:focus {
   font-size: 1.2em;
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
   * {
     outline: none;
   }
@@ -355,7 +355,7 @@ section button:hover, section button:focus {
   }
 }
 
-@media only screen and (min-device-width: 481px) {
+@media only screen and (min-width: 481px) {
   header .logo {
     width: 90%;
   }

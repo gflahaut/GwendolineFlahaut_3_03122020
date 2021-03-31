@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;500;600;700;800;900&display=swap");
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     font-family: "Roboto";
   }
@@ -308,7 +308,7 @@
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   body {
     font-family: "Roboto";
   }
@@ -934,7 +934,7 @@
   }
 }
 
-@media only screen and (min-device-width: 1601px) {
+@media only screen and (min-width: 1601px) {
   .logo {
     width: 60%;
     margin-left: 20em;

@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------------------------DESKTOP----------------------------------------------------------------------------\\
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   header {
     .logo {
       width: 30%;
@@ -124,13 +124,9 @@
     figure {
       max-width: 80%;
       margin-left: 0;
-      p.ch{
+      .ville, p.ch, {
         font-size: 1em;
       }
-      .ville {
-        font-size: 1em;
-      }
-
       span.green::before {
         position: absolute;
         border-radius: 1em 0 1em 0;
@@ -147,7 +143,7 @@
     }
 }
 .heart {
-  width: 200px;
+//   width: 200px;
 }
 .heart::before {
   background-size: 28px 28px;

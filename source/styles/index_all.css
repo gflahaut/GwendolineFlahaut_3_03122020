@@ -213,7 +213,7 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) {
+@media only screen and (min-width: 320px) {
   #cookie svg {
     min-width: 30%;
     top: 14em;
@@ -495,7 +495,6 @@ section.container figure p.ch {
 }
 
 section.container figure .ville {
-  line-height: 0.6;
   white-space: nowrap;
   grid-column-start: 1;
 }
@@ -523,8 +522,9 @@ section.container figure figcaption {
 section.container figure .heart {
   z-index: 10;
   grid-column-start: 2;
-  display: flex;
-  justify-content: flex-end;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -542,7 +542,7 @@ section.container figure .heart:focus::before {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
   header .logo {
     width: 50%;
   }
@@ -874,7 +874,7 @@ section.container figure .heart:focus::before {
   }
 }
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   header .logo {
     width: 30%;
     height: 20%;
@@ -1001,10 +1001,7 @@ section.container figure .heart:focus::before {
     max-width: 80%;
     margin-left: 0;
   }
-  section.container figure p.ch {
-    font-size: 1em;
-  }
-  section.container figure .ville {
+  section.container figure .ville, section.container figure p.ch {
     font-size: 1em;
   }
   section.container figure span.green::before {
@@ -1019,9 +1016,6 @@ section.container figure .heart:focus::before {
     margin-left: 24.5px;
     font-size: 1.65em;
     width: 10em;
-  }
-  .heart {
-    width: 200px;
   }
   .heart::before {
     background-size: 28px 28px;

@@ -1,7 +1,7 @@
 
 @import 'head.scss';
 // MOBILE
-@media only screen and (min-device-width:320px) and (max-device-width: 480px) {
+@media only screen and (min-width:320px) and (max-width: 480px) {
   body{
     font-family: $font_txt;
   }
@@ -252,7 +252,7 @@
     @import 'footer.scss';
 }
 // IPAD
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   body{
     font-family: $font_txt;
   }
@@ -771,7 +771,7 @@
     @import 'footer.scss';
 }
 // //BIG DESKTOP
-@media only screen and (min-device-width :1601px){
+@media only screen and (min-width :1601px){
   .logo{
     width: 60%;
     margin-left: 20em;

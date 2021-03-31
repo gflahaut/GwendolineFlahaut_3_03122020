@@ -1,6 +1,6 @@
 @import "head.scss";
 // IPAD
-@media only screen and (min-device-width: 481px) {
+@media only screen and (min-width: 481px) {
   header {
     .logo {
       width: 90%;
