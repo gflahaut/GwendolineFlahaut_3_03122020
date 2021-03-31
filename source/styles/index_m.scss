@@ -21,27 +21,27 @@
         grid-column-start: 2;
         grid-row-start: 1;
         display: inline-flex;
-        margin-inline-start: 3em;
-        margin-inline-end: 9em;
+        margin-left: 3em;
+        margin-right: 9em;
       }
     }
 
     p.slogan {
-      margin-block-start: 1em;
-      margin-block-end: 2em;
+      margin-top: 1em;
+      margin-bottom: 2em;
     }
     h2.slogan {
       font-size: 1.9em;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
     .bouton {
       width: 50%;
       padding: 0.9em;
       white-space: nowrap;
       p {
-        margin-inline-start: 5px;
-        margin-inline-end: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
         font-size: 0.85rem;
       }
     }
@@ -51,15 +51,15 @@
     &::before {
       left: 2rem;
       top: 2.99rem;
-    //   margin-inline-start: -2.5em;
+    //   margin-left: -2.5em;
     }
   }
   .nav {
     h4 {
-      margin-block-start: 1.83em;
-      margin-block-end: 1.5em;
-      margin-inline-start: 0.5em;
-      margin-inline-end: 1.5em;
+      margin-top: 1.83em;
+      margin-bottom: 1.5em;
+      margin-left: 0.5em;
+      margin-right: 1.5em;
       grid-column: 2 / span 3;
       font-size: 1.05em;
       font-weight: bolder;
@@ -72,12 +72,12 @@
       grid-template-rows: 100%;
       background: #f2f2f2;
       margin-bottom: 1rem;
-      margin-inline-start: 2.5em;
-      margin-inline-end: 1em;
+      margin-left: 2.5em;
+      margin-right: 1em;
       &::before {
-        margin-block-start: 1.83em;
-        margin-block-end: 1.83em;
-        margin-inline-start: 2em;
+        margin-top: 1.83em;
+        margin-bottom: 1.83em;
+        margin-left: 2em;
       }
     }
   }
@@ -87,11 +87,11 @@
     grid-template-rows: repeat(4, 0.1fr);
     figure {
       width: 89%;
-      margin-block-start: 0;
-      margin-block-end: 0.8em;
-      margin-inline-start: 1.4em;
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      margin-left: 1.4em;
       .heart {
-        width: 40px;
+        // width: 40px;
       }
       .heart::before {
         background-size: 28px 28px;
@@ -107,8 +107,8 @@
         height: 12rem;
       }
       figcaption {
-        margin-inline-start: 15.5px;
-        margin-block-end: -1em;
+        margin-left: 15.5px;
+        margin-bottom: -1em;
         width: 5em;
         white-space: nowrap;
       }

@@ -6,7 +6,7 @@
     width: 90%;
   }
   header .logo #logo {
-    margin-inline-start: 7em;
+    margin-left: 7em;
   }
   .resto {
     width: 100%;
@@ -23,15 +23,15 @@
     font-size: 1.2em;
   }
   section .price {
-    margin-inline-start: 0.5em;
+    margin-left: 0.5em;
     font-size: 1.2em;
   }
   section button {
     width: 50%;
-    margin-inline-start: 12.5em;
+    margin-left: 12.5em;
     transition: filter 0.5s ease-in-out;
   }
   .heart {
-    margin-inline-start: 5em;
+    margin-left: 5em;
   }
 }

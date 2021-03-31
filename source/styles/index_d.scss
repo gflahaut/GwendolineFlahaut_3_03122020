@@ -22,8 +22,8 @@
         grid-column-start: 2;
         grid-row-start: 1;
         display: inline-flex;
-        margin-inline-start: 3em;
-        margin-inline-end: 9em;
+        margin-left: 3em;
+        margin-right: 9em;
       }
     }
     p.slogan {
@@ -35,8 +35,8 @@
     .bouton {
       width: 22.5%;
       p {
-        margin-inline-start: 2.5px;
-        margin-inline-end: 2.5px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
         font-size: 1rem;
       }
     }
@@ -66,7 +66,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-block-start: 2em;
+      margin-top: 2em;
     }
     .function1,
     .function2,
@@ -78,9 +78,9 @@
       background: #f2f2f2;
       margin-bottom: 1rem;
       &::before {
-        margin-block-start: 2.1em;
-        margin-block-end: 2em;
-        margin-inline-start: 2em;
+        margin-top: 2.1em;
+        margin-bottom: 2em;
+        margin-left: 2em;
       }
     }
   }
@@ -89,12 +89,12 @@
     grid-row-gap: 4em;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 0.5fr repeat(2, auto);
-    margin-block-end: 2em;
+    margin-bottom: 2em;
     &:first-child {
       grid-column-start: 1;
       grid-row-start: 1;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
     .f1,.f2,.f3,.f4{
       display: flex;
@@ -124,6 +124,9 @@
     figure {
       max-width: 80%;
       margin-left: 0;
+      p.ch{
+        font-size: 1em;
+      }
       .ville {
         font-size: 1em;
       }
@@ -137,20 +140,21 @@
         height: 21rem;
       }
       figcaption {
-        margin-inline-start: 24.5px;
+        margin-left: 24.5px;
         font-size: 1.65em;
         width: 10em;
       }
     }
+}
+.heart {
+  width: 200px;
+}
+.heart::before {
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+}
   }
 
-  }
-  .heart {
-    width: 200px;
-  }
-  .heart::before {
-    background-size: 28px 28px;
-    height: 28px;
-    width: 28px;
-  }
+  
 

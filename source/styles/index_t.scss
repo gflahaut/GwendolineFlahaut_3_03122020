@@ -19,7 +19,7 @@
         display: unset;
         justify-content: unset;
         align-items: unset;
-        margin-inline-start: 0;
+        margin-left: 0;
       }
       &:before {
         font-family: $font_icons;
@@ -36,17 +36,17 @@
     }
     p.slogan {
       font-size: 1.2em;
-      margin-block-start: 0;
-      margin-block-end: 0;
+      margin-top: 0;
+      margin-bottom: 0;
       font-weight: normal;
       line-height: initial;
     }
     .bouton {
       width: 50%;
-      margin-block-end: 4em;
+      margin-bottom: 4em;
       p {
-        margin-inline-start: 5px;
-        margin-inline-end: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
         font-size: 1rem;
       }
       &:hover,
@@ -64,10 +64,10 @@
   }
   .nav {
     h4 {
-      margin-block-start: 1.83em;
-      margin-block-end: 1.5em;
-      margin-inline-start: 0.5em;
-      margin-inline-end: 1.5em;
+      margin-top: 1.83em;
+      margin-bottom: 1.5em;
+      margin-left: 0.5em;
+      margin-right: 1.5em;
       grid-column: 2 / span 3;
       font-size: 1.05em;
       font-weight: bolder;
@@ -91,9 +91,9 @@
       background: #f2f2f2;
       margin-right: 2rem;
       &::before {
-        margin-block-start: 1.83em;
-        margin-block-end: 1.83em;
-        margin-inline-start: 2em;
+        margin-top: 1.83em;
+        margin-bottom: 1.83em;
+        margin-left: 2em;
         color: grey;
       }
     }
@@ -105,9 +105,9 @@
     figure {
       width: 90%;
       height: auto;
-      margin-block-start: 0;
-      margin-block-end: 0.8em;
-      margin-inline-start: 2.3em;
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      margin-left: 2.3em;
       .ville {
         font-size: 1.2em;
       }
@@ -122,7 +122,7 @@
         height: 24rem;
       }
       figcaption {
-        margin-inline-start: 15.5px;
+        margin-left: 15.5px;
         font-size: 1.5em;
       }
       span {
@@ -132,7 +132,7 @@
         align-items: start;
         justify-content: space-between;
         font-size: 1em;
-        margin-inline-start: 15.5px;
+        margin-left: 15.5px;
         grid-row-start: 1;
         grid-column-start: 1;
         &.green::before {

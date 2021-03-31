@@ -15,7 +15,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     h2 {
-        margin-inline-start: 1em;
+        margin-left: 1em;
     }
     button {
         font-family: $font_txt;
@@ -47,10 +47,10 @@ header {
         background: white;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .logo {
         margin: auto;
@@ -84,7 +84,7 @@ header {
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            margin-inline-start: 2em;
+            margin-left: 2em;
         }
     }
     h2.slogan,
@@ -94,12 +94,12 @@ header {
     }
     h2.slogan {
         margin: auto;
-        margin-block-start: 1.5em;
+        margin-top: 1.5em;
         line-height: 1;
     }
     p.slogan {
-        margin-block-start: 1em;
-        margin-block-end: 2em;
+        margin-top: 1em;
+        margin-bottom: 2em;
         font-weight: 200;
         line-height: 1.25;
     }
@@ -110,8 +110,8 @@ header {
         text-align: center;
         line-height: 10px;
         padding: 1em;
-        margin-block-start: 0.5em;
-        margin-block-end: 5em;
+        margin-top: 0.5em;
+        margin-bottom: 5em;
         border-radius: 10em;
         font-weight: 400;
         &:hover {
@@ -137,7 +137,7 @@ button {
     border-radius: 2em;
     border: none;
     &:before {
-        margin-inline-end: 0.25em;
+        margin-right: 0.25em;
     }
 }
 
@@ -155,8 +155,8 @@ button {
     min-width: 80%;
     align-items: center;
     white-space: nowrap;
-    margin-inline-end: 1em;
-    margin-inline-start: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
     }
     h4 {
       grid-column: 2 / span 3;
@@ -225,11 +225,11 @@ section.container {
             display: grid;
             grid-template-columns: 80% 20%;
             grid-template-rows: 1fr;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 1rem;
         }
         .ville {
             line-height: 0.6;
@@ -251,7 +251,7 @@ section.container {
             border-radius: 1rem 1rem 0 0;
         }
         figcaption {
-            margin-block-start: 0.5em;
+            margin-top: 0.5em;
         }
 
         .heart {

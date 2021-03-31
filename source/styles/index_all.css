@@ -239,7 +239,7 @@ html {
 
 body h2,
 html h2 {
-  margin-inline-start: 1em;
+  margin-left: 1em;
 }
 
 body button,
@@ -274,10 +274,10 @@ header figure {
   background: white;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 header .logo {
@@ -316,7 +316,7 @@ header .localisation input {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-inline-start: 2em;
+  margin-left: 2em;
 }
 
 header h2.slogan,
@@ -327,13 +327,13 @@ header p.slogan {
 
 header h2.slogan {
   margin: auto;
-  margin-block-start: 1.5em;
+  margin-top: 1.5em;
   line-height: 1;
 }
 
 header p.slogan {
-  margin-block-start: 1em;
-  margin-block-end: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
   font-weight: 200;
   line-height: 1.25;
 }
@@ -345,8 +345,8 @@ header .bouton {
   text-align: center;
   line-height: 10px;
   padding: 1em;
-  margin-block-start: 0.5em;
-  margin-block-end: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
   border-radius: 10em;
   font-weight: 400;
 }
@@ -376,7 +376,7 @@ button {
 }
 
 button:before {
-  margin-inline-end: 0.25em;
+  margin-right: 0.25em;
 }
 
 .nav {
@@ -396,8 +396,8 @@ button:before {
   min-width: 80%;
   align-items: center;
   white-space: nowrap;
-  margin-inline-end: 1em;
-  margin-inline-start: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .nav h4 {
@@ -487,11 +487,11 @@ section.container figure p.ch {
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: 1fr;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 1rem;
 }
 
 section.container figure .ville {
@@ -517,7 +517,7 @@ section.container figure img {
 }
 
 section.container figure figcaption {
-  margin-block-start: 0.5em;
+  margin-top: 0.5em;
 }
 
 section.container figure .heart {
@@ -561,17 +561,17 @@ section.container figure .heart:focus::before {
     grid-column-start: 2;
     grid-row-start: 1;
     display: inline-flex;
-    margin-inline-start: 3em;
-    margin-inline-end: 9em;
+    margin-left: 3em;
+    margin-right: 9em;
   }
   header p.slogan {
-    margin-block-start: 1em;
-    margin-block-end: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
   header h2.slogan {
     font-size: 1.9em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   header .bouton {
     width: 50%;
@@ -579,8 +579,8 @@ section.container figure .heart:focus::before {
     white-space: nowrap;
   }
   header .bouton p {
-    margin-inline-start: 5px;
-    margin-inline-end: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 0.85rem;
   }
   li::before {
@@ -588,10 +588,10 @@ section.container figure .heart:focus::before {
     top: 2.99rem;
   }
   .nav h4 {
-    margin-block-start: 1.83em;
-    margin-block-end: 1.5em;
-    margin-inline-start: 0.5em;
-    margin-inline-end: 1.5em;
+    margin-top: 1.83em;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
     grid-column: 2 / span 3;
     font-size: 1.05em;
     font-weight: bolder;
@@ -604,15 +604,15 @@ section.container figure .heart:focus::before {
     grid-template-rows: 100%;
     background: #f2f2f2;
     margin-bottom: 1rem;
-    margin-inline-start: 2.5em;
-    margin-inline-end: 1em;
+    margin-left: 2.5em;
+    margin-right: 1em;
   }
   .nav .function1::before,
   .nav .function2::before,
   .nav .function3::before {
-    margin-block-start: 1.83em;
-    margin-block-end: 1.83em;
-    margin-inline-start: 2em;
+    margin-top: 1.83em;
+    margin-bottom: 1.83em;
+    margin-left: 2em;
   }
   section.container {
     grid-template-columns: 100%;
@@ -620,12 +620,9 @@ section.container figure .heart:focus::before {
   }
   section.container figure {
     width: 89%;
-    margin-block-start: 0;
-    margin-block-end: 0.8em;
-    margin-inline-start: 1.4em;
-  }
-  section.container figure .heart {
-    width: 40px;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    margin-left: 1.4em;
   }
   section.container figure .heart::before {
     background-size: 28px 28px;
@@ -641,8 +638,8 @@ section.container figure .heart:focus::before {
     height: 12rem;
   }
   section.container figure figcaption {
-    margin-inline-start: 15.5px;
-    margin-block-end: -1em;
+    margin-left: 15.5px;
+    margin-bottom: -1em;
     width: 5em;
     white-space: nowrap;
   }
@@ -657,12 +654,12 @@ section.container figure .heart:focus::before {
   footer a {
     color: white;
     text-decoration: none;
-    margin-inline-start: 1em;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
+    margin-left: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
   }
   footer a:first-of-type {
-    margin-block-end: 1.8em;
+    margin-bottom: 1.8em;
     margin-bottom: 1em;
   }
   footer a:hover {
@@ -676,16 +673,16 @@ section.container figure .heart:focus::before {
     font-weight: bold;
     content: "\f2e7";
     color: white;
-    margin-inline-start: 0.4em;
-    margin-inline-end: 1.2em;
+    margin-left: 0.4em;
+    margin-right: 1.2em;
   }
   footer a span.market::before {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     content: "\f4c4";
     color: white;
-    margin-inline-start: 0.4em;
-    margin-inline-end: 0.8em;
+    margin-left: 0.4em;
+    margin-right: 0.8em;
   }
   footer .logo {
     font-family: "Shrikhand";
@@ -712,7 +709,7 @@ section.container figure .heart:focus::before {
     display: unset;
     justify-content: unset;
     align-items: unset;
-    margin-inline-start: 0;
+    margin-left: 0;
   }
   header .localisation:before {
     font-family: "Font Awesome 5 Free";
@@ -728,18 +725,18 @@ section.container figure .heart:focus::before {
   }
   header p.slogan {
     font-size: 1.2em;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
     line-height: initial;
   }
   header .bouton {
     width: 50%;
-    margin-block-end: 4em;
+    margin-bottom: 4em;
   }
   header .bouton p {
-    margin-inline-start: 5px;
-    margin-inline-end: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 1rem;
   }
   header .bouton:hover, header .bouton:focus {
@@ -751,10 +748,10 @@ section.container figure .heart:focus::before {
     top: 3rem;
   }
   .nav h4 {
-    margin-block-start: 1.83em;
-    margin-block-end: 1.5em;
-    margin-inline-start: 0.5em;
-    margin-inline-end: 1.5em;
+    margin-top: 1.83em;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
     grid-column: 2 / span 3;
     font-size: 1.05em;
     font-weight: bolder;
@@ -781,9 +778,9 @@ section.container figure .heart:focus::before {
   .nav .function1::before,
   .nav .function2::before,
   .nav .function3::before {
-    margin-block-start: 1.83em;
-    margin-block-end: 1.83em;
-    margin-inline-start: 2em;
+    margin-top: 1.83em;
+    margin-bottom: 1.83em;
+    margin-left: 2em;
     color: grey;
   }
   section.container {
@@ -793,9 +790,9 @@ section.container figure .heart:focus::before {
   section.container figure {
     width: 90%;
     height: auto;
-    margin-block-start: 0;
-    margin-block-end: 0.8em;
-    margin-inline-start: 2.3em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    margin-left: 2.3em;
   }
   section.container figure .ville {
     font-size: 1.2em;
@@ -811,7 +808,7 @@ section.container figure .heart:focus::before {
     height: 24rem;
   }
   section.container figure figcaption {
-    margin-inline-start: 15.5px;
+    margin-left: 15.5px;
     font-size: 1.5em;
   }
   section.container figure span {
@@ -821,7 +818,7 @@ section.container figure .heart:focus::before {
     align-items: start;
     justify-content: space-between;
     font-size: 1em;
-    margin-inline-start: 15.5px;
+    margin-left: 15.5px;
     grid-row-start: 1;
     grid-column-start: 1;
   }
@@ -841,12 +838,12 @@ section.container figure .heart:focus::before {
   footer a {
     color: white;
     text-decoration: none;
-    margin-inline-start: 1em;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
+    margin-left: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
   }
   footer a:first-of-type {
-    margin-block-end: 1.8em;
+    margin-bottom: 1.8em;
     margin-bottom: 1em;
   }
   footer a:hover {
@@ -860,16 +857,16 @@ section.container figure .heart:focus::before {
     font-weight: bold;
     content: "\f2e7";
     color: white;
-    margin-inline-start: 0.4em;
-    margin-inline-end: 1.2em;
+    margin-left: 0.4em;
+    margin-right: 1.2em;
   }
   footer a span.market::before {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     content: "\f4c4";
     color: white;
-    margin-inline-start: 0.4em;
-    margin-inline-end: 0.8em;
+    margin-left: 0.4em;
+    margin-right: 0.8em;
   }
   footer .logo {
     font-family: "Shrikhand";
@@ -900,8 +897,8 @@ section.container figure .heart:focus::before {
     grid-column-start: 2;
     grid-row-start: 1;
     display: inline-flex;
-    margin-inline-start: 3em;
-    margin-inline-end: 9em;
+    margin-left: 3em;
+    margin-right: 9em;
   }
   header p.slogan {
     font-size: 2em;
@@ -913,8 +910,8 @@ section.container figure .heart:focus::before {
     width: 22.5%;
   }
   header .bouton p {
-    margin-inline-start: 2.5px;
-    margin-inline-end: 2.5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
     font-size: 1rem;
   }
   li {
@@ -943,7 +940,7 @@ section.container figure .heart:focus::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-start: 2em;
+    margin-top: 2em;
   }
   .nav .function1,
   .nav .function2,
@@ -958,22 +955,22 @@ section.container figure .heart:focus::before {
   .nav .function1::before,
   .nav .function2::before,
   .nav .function3::before {
-    margin-block-start: 2.1em;
-    margin-block-end: 2em;
-    margin-inline-start: 2em;
+    margin-top: 2.1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
   }
   section.container {
     display: inline-grid;
     grid-row-gap: 4em;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 0.5fr repeat(2, auto);
-    margin-block-end: 2em;
+    margin-bottom: 2em;
   }
   section.container:first-child {
     grid-column-start: 1;
     grid-row-start: 1;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   section.container .f1, section.container .f2, section.container .f3, section.container .f4 {
     display: flex;
@@ -1004,6 +1001,9 @@ section.container figure .heart:focus::before {
     max-width: 80%;
     margin-left: 0;
   }
+  section.container figure p.ch {
+    font-size: 1em;
+  }
   section.container figure .ville {
     font-size: 1em;
   }
@@ -1016,20 +1016,18 @@ section.container figure .heart:focus::before {
     height: 21rem;
   }
   section.container figure figcaption {
-    margin-inline-start: 24.5px;
+    margin-left: 24.5px;
     font-size: 1.65em;
     width: 10em;
   }
-}
-
-.heart {
-  width: 200px;
-}
-
-.heart::before {
-  background-size: 28px 28px;
-  height: 28px;
-  width: 28px;
+  .heart {
+    width: 200px;
+  }
+  .heart::before {
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+  }
 }
 
 footer {
@@ -1044,13 +1042,13 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
-  margin-inline-start: 1em;
-  margin-block-start: 0.3em;
-  margin-block-end: 0.3em;
+  margin-left: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 footer a:first-of-type {
-  margin-block-end: 1.8em;
+  margin-bottom: 1.8em;
   margin-bottom: 1em;
 }
 
@@ -1067,8 +1065,8 @@ footer a span.eat::before {
   font-weight: bold;
   content: "\f2e7";
   color: white;
-  margin-inline-start: 0.4em;
-  margin-inline-end: 1.2em;
+  margin-left: 0.4em;
+  margin-right: 1.2em;
 }
 
 footer a span.market::before {
@@ -1076,8 +1074,8 @@ footer a span.market::before {
   font-weight: bold;
   content: "\f4c4";
   color: white;
-  margin-inline-start: 0.4em;
-  margin-inline-end: 0.8em;
+  margin-left: 0.4em;
+  margin-right: 0.8em;
 }
 
 footer .logo {

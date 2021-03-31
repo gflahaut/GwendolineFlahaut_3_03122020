@@ -16,7 +16,7 @@
     .logo {
       width: 60%;
       grid-column-start: 2;
-      margin-inline-start: 15%;
+      margin-left: 15%;
       #logo {
         display: flex;
         margin: auto;
@@ -47,7 +47,7 @@
       font-size: 1em;
     }
     .price {
-      margin-inline-start: 10em;
+      margin-left: 10em;
       font-size: 1.2em;
     }
     button {
@@ -56,12 +56,12 @@
       height: auto;
       display: flex;
       margin: auto;
-      margin-block-start: 4em;
-      margin-block-end: 4em;
+      margin-top: 4em;
+      margin-bottom: 4em;
     }
   }
   .heart {
-    margin-inline-start: 4em;
+    margin-left: 4em;
   }
   footer{
     grid-column: span 3;
