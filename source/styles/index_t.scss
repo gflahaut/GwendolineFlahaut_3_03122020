@@ -36,8 +36,8 @@
     }
     p.slogan {
       font-size: 1.2em;
-      margin-top: 0;
-      margin-bottom: 0;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
       font-weight: normal;
       line-height: initial;
     }
@@ -63,6 +63,7 @@
     }
   }
   .nav {
+    grid-template-columns: 0.75fr 1.5fr 0.75fr;
     h4 {
       margin-top: 1.83em;
       margin-bottom: 1.5em;
@@ -94,6 +95,7 @@
         margin-top: 1.83em;
         margin-bottom: 1.83em;
         margin-left: 2em;
+        margin-right: 2em;
         color: grey;
       }
     }

@@ -390,6 +390,15 @@ button:before {
   grid-column: span 3;
 }
 
+.nav h2.bold {
+  grid-column: span 3;
+}
+
+.nav ul {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
 .nav .function1,
 .nav .function2,
 .nav .function3 {
@@ -471,6 +480,7 @@ section.container {
   grid-row-gap: 0.5em;
   border-radius: 0;
   background: none;
+  margin-bottom: 2em;
 }
 
 section.container figure {
@@ -517,6 +527,8 @@ section.container figure img {
 
 section.container figure figcaption {
   margin-top: 0.5em;
+  width: 100%;
+  white-space: nowrap;
 }
 
 section.container figure .heart {
@@ -546,8 +558,11 @@ section.container figure .heart:focus::before {
   header .logo {
     width: 50%;
   }
+  header .localisation {
+    width: auto;
+  }
   header .localisation span {
-    width: 100%;
+    width: 90%;
     display: inline-grid;
     grid-template-columns: 0.1fr 0.6fr;
     grid-template-rows: 100%;
@@ -561,8 +576,9 @@ section.container figure .heart:focus::before {
     grid-column-start: 2;
     grid-row-start: 1;
     display: inline-flex;
-    margin-left: 3em;
-    margin-right: 9em;
+  }
+  header .localisation input {
+    width: auto;
   }
   header p.slogan {
     margin-top: 1em;
@@ -574,7 +590,7 @@ section.container figure .heart:focus::before {
     margin-bottom: 1em;
   }
   header .bouton {
-    width: 50%;
+    width: auto;
     padding: 0.9em;
     white-space: nowrap;
   }
@@ -583,9 +599,22 @@ section.container figure .heart:focus::before {
     margin-right: 5px;
     font-size: 0.85rem;
   }
+  li {
+    display: flex;
+    flex-direction: column;
+  }
   li::before {
-    left: 2rem;
+    left: 0;
     top: 2.99rem;
+  }
+  .nav {
+    grid-template-rows: 15% 80%;
+  }
+  .nav ul {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: inline-grid;
+    grid-template-rows: repeat(3, 1fr);
   }
   .nav h4 {
     margin-top: 1.83em;
@@ -603,9 +632,7 @@ section.container figure .heart:focus::before {
     grid-template-columns: 0.7fr 1fr 0.5fr;
     grid-template-rows: 100%;
     background: #f2f2f2;
-    margin-bottom: 1rem;
-    margin-left: 2.5em;
-    margin-right: 1em;
+    padding-right: 2.5em;
   }
   .nav .function1::before,
   .nav .function2::before,
@@ -622,7 +649,7 @@ section.container figure .heart:focus::before {
     width: 89%;
     margin-top: 0;
     margin-bottom: 0.8em;
-    margin-left: 1.4em;
+    margin-left: 1.2em;
   }
   section.container figure .heart::before {
     background-size: 28px 28px;
@@ -637,11 +664,8 @@ section.container figure .heart:focus::before {
   section.container figure img {
     height: 12rem;
   }
-  section.container figure figcaption {
+  section.container figure span.bold, section.container figure p.ch {
     margin-left: 15.5px;
-    margin-bottom: -1em;
-    width: 5em;
-    white-space: nowrap;
   }
   footer {
     width: auto;
@@ -725,8 +749,8 @@ section.container figure .heart:focus::before {
   }
   header p.slogan {
     font-size: 1.2em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     font-weight: normal;
     line-height: initial;
   }
@@ -746,6 +770,9 @@ section.container figure .heart:focus::before {
   li::before {
     left: 0;
     top: 3rem;
+  }
+  .nav {
+    grid-template-columns: 0.75fr 1.5fr 0.75fr;
   }
   .nav h4 {
     margin-top: 1.83em;
@@ -781,6 +808,7 @@ section.container figure .heart:focus::before {
     margin-top: 1.83em;
     margin-bottom: 1.83em;
     margin-left: 2em;
+    margin-right: 2em;
     color: grey;
   }
   section.container {
@@ -1015,7 +1043,6 @@ section.container figure .heart:focus::before {
   section.container figure figcaption {
     margin-left: 24.5px;
     font-size: 1.65em;
-    width: 10em;
   }
   .heart::before {
     background-size: 28px 28px;

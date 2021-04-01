@@ -149,6 +149,13 @@ button {
     & span.bold {
       grid-column: span 3;
     }
+    h2.bold{
+        grid-column: span 3;
+    }
+    ul{
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
     .function1,
     .function2,
     .function3 {
@@ -213,6 +220,7 @@ section.container {
     grid-row-gap: 0.5em;
     border-radius: 0;
     background: none;
+    margin-bottom: 2em;
     figure {
         background-color: white;
         border-radius: 1rem;
@@ -251,6 +259,8 @@ section.container {
         }
         figcaption {
             margin-top: 0.5em;
+            width: 100%;
+            white-space: nowrap;
         }
 
         .heart {
