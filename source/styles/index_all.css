@@ -54,13 +54,13 @@ html, body {
   width: 100%;
   overflow: visible;
   cursor: wait;
-  -moz-animation: hideme 0s ease-in 500s forwards;
+  -moz-animation: hideme 0s ease-in 3s forwards;
   /* Firefox */
-  -webkit-animation: hideme 0s ease-in 500s forwards;
+  -webkit-animation: hideme 0s ease-in 3s forwards;
   /* Safari and Chrome */
-  -o-animation: hideme 0s ease-in 500s forwards;
+  -o-animation: hideme 0s ease-in 3s forwards;
   /* Opera */
-  animation: hideme 0s ease-in 500s forwards, colorchanging 5s infinite alternate;
+  animation: hideme 0s ease-in 3s forwards, colorchanging 3s infinite alternate;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -73,7 +73,7 @@ html, body {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  animation: big 330ms infinite alternate;
+  animation: big 1s infinite alternate;
   grid-column-start: 2;
   grid-row-start: 2;
 }
