@@ -36,12 +36,6 @@ html, body {
   grid-row-start: 2;
 }
 
-.loading-spinner .figure {
-  background: url("https://github.com/gflahaut/GwendolineFlahaut_3_03122020_1er-version/tree/master/source/images/icone/Untitled.svg") no-repeat;
-  width: 220px;
-  height: 266px;
-}
-
 .loading-spinner .container {
   display: grid;
   grid-template-columns: repeat(3, 33%);

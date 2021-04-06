@@ -34,11 +34,6 @@
         grid-column-start: 2;
         grid-row-start: 2;
     }
-    .figure {
-        background: url("https://github.com/gflahaut/GwendolineFlahaut_3_03122020_1er-version/tree/master/source/images/icone/Untitled.svg") no-repeat;
-        width: 220px;
-        height: 266px;
-    }
     .container{
         display:grid;
         grid-template-columns: repeat(3,33%);
