@@ -401,7 +401,7 @@ section button:hover, section button:focus {
     grid-column: span 3;
   }
   header span {
-    font-size: xxx-large;
+    font-size: x-large;
   }
   header .logo {
     width: 60%;
